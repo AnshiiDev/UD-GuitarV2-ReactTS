@@ -18,7 +18,10 @@ export type Guitar = {
 
 //utility types
 // Pick: selecciona solo las propiedades id, name y price de Guitar y agrega la propiedad quantity
-export type CartItem = Pick<Guitar, "id" | "name" | "image" | "price"> & {
+export type CartItem = Pick<
+  Guitar,
+  "id" | "name" | "image" | "price" | "description"
+> & {
   quantity: number;
 };
 
